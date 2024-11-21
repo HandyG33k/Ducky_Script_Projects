@@ -1,0 +1,24 @@
+REM Title Rick Roll Firefox 
+REM Author Michael Randall
+REM 08/20/2022 <Launches Youtube on Firefox and Plays Never Gonna Give You Up :)>
+DELAY 1000
+GUI r
+DELAY 100
+STRINGLN firefox
+DELAY 300
+STRINGLN youtube
+DELAY 2000
+DOWNARROW
+ENTER
+DELAY 2000
+TAB
+TAB
+TAB
+TAB
+DELAY 500
+STRING rick
+DOWNARROW
+ENTER
+DELAY 1500
+TAB
+ENTER
