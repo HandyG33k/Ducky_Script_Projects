@@ -1,0 +1,453 @@
+REM Title: Type Rickroll Slowdown
+REM Author: Michael Randall
+REM Discription: Opens a Notepad Doc and Types the Lyrics of Never Gonna Give You Up By Rick Astley With a 100ms Delay per Line that Grows by 100ms with Every New Line Typed 
+REM Target: Windows 10 VM
+REM Props: Darren Kithen Rick Ashley
+
+    REM Attackmode and Startup Delay
+		ATTACKMODE HID STORAGE
+		DELAY 2000
+	
+    REM Variable to Increment 100ms Per Printed Line
+        VAR $PAUSE_BETWEEN_LINES = 100
+
+    REM Opens Notepad with Windows Run Command
+		GUI r
+		DELAY 200
+		STRINGLN notepad
+		DELAY 1000
+
+    REM Never Gonna Give You Up Lyrics Delayed by Incrmenting 100ms Per Line
+
+        STRINGLN "Never Gonna Give You Up"
+        DELAY 100
+        STRINGLN By Rick Astley
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN We're no strangers to love
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN You know the rules and so do I
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN A full commitment's what I'm thinking of
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN You wouldn't get this from any other guy
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+    	ENTER
+        STRINGLN I just wanna tell you how I'm feeling
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Gotta make you understand
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+    	ENTER
+        STRINGLN Never gonna give you up
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna let you down
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna run around and desert you
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna make you cry
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna say goodbye
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna tell a lie and hurt you
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+    	ENTER
+        STRINGLN We've known each other for so long
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Your heart's been aching, but
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN You're too shy to say it
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Inside, we both know what's been going on
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN We know the game and we're gonna play it
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+    	ENTER
+        STRINGLN And if you ask me how I'm feeling
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Don't tell me you're too blind to see
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+    	ENTER
+        STRINGLN Never gonna give you up
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna let you down
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna run around and desert you
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna make you cry
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna say goodbye
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna tell a lie and hurt you
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+    	ENTER
+        STRINGLN Never gonna give you up
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna let you down
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna run around and desert you
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna make you cry
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna say goodbye
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna tell a lie and hurt you
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+    	ENTER
+        STRINGLN Ooh, give you up
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Ooh, give you up
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna give, never gonna give
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Give you up
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna give, never gonna give
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Give you up
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+    	ENTER
+        STRINGLN We've known each other for so long
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Your heart's been aching, but
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN You're too shy to say it
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Inside, we both know what's been going on
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN We know the game and we're gonna play it
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+	ENTER
+        STRINGLN I just wanna tell you how I'm feeling
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Gotta make you understand
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+    	ENTER
+        STRINGLN Never gonna give you up
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna let you down
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna run around and desert you
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna make you cry
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna say goodbye
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna tell a lie and hurt you
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+	ENTER
+        STRINGLN Never gonna give you up
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna let you down
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna run around and desert you
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna make you cry
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna say goodbye
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna tell a lie and hurt you
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+    	ENTER
+        STRINGLN Never gonna give you up
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna let you down
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna run around and desert you
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna make you cry
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna say goodbye
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna tell a lie and hurt you 
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+
+
+
+
+REM Title: Exercises 5-2
+REM Author: Michael Randall
+REM Discription: Opens a Notepad Doc and Types the Lyrics of Never Gonna Give You Up By Rick Astley With a 100ms Delay per Line that Grows by 100ms with Every New Line Typed 
+REM Target: Windows 10 VM
+REM Props: Rick Ashley
+REM New Edition for This Lesson is The Explanation for How the Variable Increments 
+
+    REM Attackmode and Startup Delay
+		ATTACKMODE HID STORAGE
+		DELAY 2000
+	
+    REM Variable to Increment 100ms Per Printed Line
+        VAR $PAUSE_BETWEEN_LINES = 100
+
+    REM Opens Notepad with Windows Run Command
+		GUI r
+		DELAY 200
+		STRINGLN notepad
+		DELAY 1000
+
+    REM Never Gonna Give You Up Lyrics Delayed by Incrmenting 100ms Per Line
+    REM Use of $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100) after the DELAY allows the Variable to be incremented by 100ms per new line (Took my mind a bit of mental gymnatics to make that happen lol)
+        STRINGLN "Never Gonna Give You Up"
+        DELAY 100
+        STRINGLN By Rick Astley
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN We're no strangers to love
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN You know the rules and so do I
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN A full commitment's what I'm thinking of
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN You wouldn't get this from any other guy
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+    	ENTER
+        STRINGLN I just wanna tell you how I'm feeling
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Gotta make you understand
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+    	ENTER
+        STRINGLN Never gonna give you up
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna let you down
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna run around and desert you
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna make you cry
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna say goodbye
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna tell a lie and hurt you
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+    	ENTER
+        STRINGLN We've known each other for so long
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Your heart's been aching, but
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN You're too shy to say it
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Inside, we both know what's been going on
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN We know the game and we're gonna play it
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+    	ENTER
+        STRINGLN And if you ask me how I'm feeling
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Don't tell me you're too blind to see
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+    	ENTER
+        STRINGLN Never gonna give you up
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna let you down
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna run around and desert you
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna make you cry
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna say goodbye
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna tell a lie and hurt you
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+    	ENTER
+        STRINGLN Never gonna give you up
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna let you down
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna run around and desert you
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna make you cry
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna say goodbye
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna tell a lie and hurt you
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+    	ENTER
+        STRINGLN Ooh, give you up
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Ooh, give you up
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna give, never gonna give
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Give you up
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna give, never gonna give
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Give you up
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+    	ENTER
+        STRINGLN We've known each other for so long
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Your heart's been aching, but
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN You're too shy to say it
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Inside, we both know what's been going on
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN We know the game and we're gonna play it
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+	    ENTER
+        STRINGLN I just wanna tell you how I'm feeling
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Gotta make you understand
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+    	ENTER
+        STRINGLN Never gonna give you up
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna let you down
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna run around and desert you
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna make you cry
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna say goodbye
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna tell a lie and hurt you
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+	    ENTER
+        STRINGLN Never gonna give you up
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna let you down
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna run around and desert you
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna make you cry
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna say goodbye
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna tell a lie and hurt you
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+    	ENTER
+        STRINGLN Never gonna give you up
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna let you down
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna run around and desert you
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna make you cry
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna say goodbye
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
+        STRINGLN Never gonna tell a lie and hurt you 
+        DELAY $PAUSE_BETWEEN_LINES
+        $PAUSE_BETWEEN_LINES = ($PAUSE_BETWEEN_LINES + 100)
