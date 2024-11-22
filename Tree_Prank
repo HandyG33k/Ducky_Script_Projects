@@ -1,0 +1,11 @@
+REM Title Tree Prank 
+REM Author Michael Randall
+REM 08/20/2022 <Launches cmd and uses a one liner to open cmd change text color to
+REM Green and run Tree and go full screen and close on completion :)>
+DELAY 1000
+GUI r
+DELAY 100
+STRINGLN cmd /C color A&tree c:/ /F /A&exit
+DELAY 100
+F11
+
