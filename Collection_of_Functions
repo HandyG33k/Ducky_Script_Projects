@@ -1,0 +1,77 @@
+REM Function to turn off all lock keys
+FUNCTION LOCK_OFF()
+    IF ($_NUMLOCK_ON == TRUE) THEN
+        NUMLOCK
+    END_IF
+    IF ($_CAPSLOCK_ON == TRUE) THEN
+        CAPSLOCK
+    END_IF
+    IF ($_SCROLLLOCK_ON == TRUE) THEN
+        SCROLLLOCK
+    END_IF
+END_FUNCTION
+
+REM Function to open a TextEditor
+FUNCTION TEXT_EDIT()
+    GUI r
+    DELAY 200
+    STRINGLN notepad
+END_FUNCTION
+
+REM Function to open cmd using the run dialog
+FUNCTION OPEN_CMD()
+    GUI r
+    DELAY 200
+    STRINGLN cmd
+    DELAY 100
+    ENTER
+END_FUNCTION
+
+REM Function to change directories, create a Test folder, then change into the Test folder
+FUNCTION SET_UP()
+    STRING cd .\Documents\Test\
+    ENTER
+END_FUNCTION
+
+REM Function to create random .txt files
+FUNCTION CREATE_FILES()
+    WHILE ($FILE_QUANTITY > 0)
+        STRING echo
+        SPACE
+        RANDOM_LOWERCASE_LETTER
+        RANDOM_CHAR
+        RANDOM_CHAR
+        RANDOM_CHAR
+        RANDOM_CHAR
+        SPACE
+        STRING >
+        SPACE
+        RANDOM_UPPERCASE_LETTER
+        RANDOM_CHAR
+        RANDOM_CHAR
+        RANDOM_CHAR
+        RANDOM_CHAR
+        STRING .txt
+        ENTER
+        DELAY 500
+        $FILE_QUANTITY = ($FILE_QUANTITY - 1)
+    END_WHILE
+END_FUNCTION
+
+REM Function to clean up Test folder
+FUNCTION CLEAN_UP()
+    STRING cd ..
+    ENTER
+    DELAY 100
+    STRING del Test
+    ENTER
+    DELAY 100
+    STRING Y
+    ENTER
+END_FUNCTION
+
+REM Function to close cmd window
+FUNCTION CLOSE_CMD()
+    STRING exit
+    ENTER
+END_FUNCTION
